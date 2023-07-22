@@ -34337,16 +34337,16 @@ A.da.prototype={}
 A.ln.prototype={
 an(){return new A.IW(A.a([],t.t),B.k)}}
 A.IW.prototype={
-S(a){var s=null,r=B.cc[this.d]
+S(a){var s=null,r=B.cd[this.d]
 return A.a8X(A.z5(s,A.Eo(B.bS,A.a([new A.hh(B.y0,new A.fH(B.ee,s,s,A.lI(r.a,B.uo,s,s),s),s),new A.hh(new A.bq(0,r.f,0,0),new A.fH(B.ee,s,s,A.E3(A.abN(r.b,s),s,r.e),s),s),A.Vv(30,new A.hZ(new A.a4n(this),s),s,s,a.a6(t.w).f.a.a/2-250,s,s,s),new A.fH(B.uU,s,s,new A.hh(B.y3,A.lI(""+(this.d+1)+"/15",B.Hc,s,s),s),s)],t.F),B.FA),s,B.ei,s,s,s,s))}}
 A.a4n.prototype={
-$1(a){var s,r,q,p,o,n=null,m=this.a,l=B.cc[m.d].c,k=A.a([],t.F)
+$1(a){var s,r,q,p,o,n=null,m=this.a,l=B.cd[m.d].c,k=A.a([],t.F)
 for(s=l.length,r=t.hl,q=t.tl,p=t.ni,o=0;o<s;++o){k.push(new A.fo(500,n,A.abx(A.lI(l[o],n,n,n),new A.a4m(m,o,a),new A.b7(new A.c8(B.HU,q),new A.c8(B.l0,r),new A.c8(B.l,r),n,n,n,n,new A.c8(B.lo,p),n,n,n,n,n,n,n,n,n,n,n,n,n,n)),n))
 k.push(B.Ft)}return A.a88(k,B.fm)},
 $S:126}
 A.a4m.prototype={
 $0(){var s=this.b,r=this.a
-if(s===B.cc[r.d].d)++r.e
+if(s===B.cd[r.d].d)++r.e
 r.f.push(s)
 r.aq(new A.a4l(r,this.c))},
 $S:0}
@@ -34369,7 +34369,7 @@ $S:117}
 A.nL.prototype={
 S(a){var s,r,q,p,o,n,m,l=null,k=t.F,j=A.a([B.jI,A.lI("Your Score: "+this.c+"/"+this.d,B.Iu,B.bK,l),B.jI],k)
 for(s=this.e,r=0;r<15;r=q){q=r+1
-p=B.cc[r]
+p=B.cd[r]
 o=A.lI(""+q+". "+p.a,B.up,l,l)
 n=p.c
 p=n[p.d]
@@ -34377,7 +34377,7 @@ m=A.lI("Correct Answer: "+p,B.Iv,B.cO,l)
 n=n[s[r]]
 p=n===p?B.CX:B.CY
 p=A.a([new A.fH(B.ee,l,l,o,l),new A.jH(100,50,l,l,l,l,m,l),new A.jH(100,70,l,l,l,l,A.lI("Your Answer: "+n,new A.q(!0,p,l,l,l,l,16,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l),B.cO,l),l)],k)
-o=B.cc[r]
+o=B.cd[r]
 j.push(A.a88(A.a([B.cL,new A.fo(600,100,new A.us(B.bS,B.dW,p,l),l),B.cL,A.abN(o.b,o.e),B.cL,B.JS,A.lI(o.r,B.uq,B.bK,l),B.cL,B.xQ],k),B.fm))}k=A.aU([null,0],t.st,t.S)
 s=j.length
 p=!0
@@ -53485,7 +53485,7 @@ r=A.a([],s)
 q=c.y
 q.toString
 p=J.b9(q,null)
-if(p==null)p=B.cd
+if(p==null)p=B.cc
 o=A.y(t.dR,t.lC)
 q=c.y
 q.toString
@@ -53505,8 +53505,8 @@ if(k){r=A.a([],s)
 h=c.y
 h.toString
 p=J.b9(h,i.gcq())
-if(p==null)p=B.cd}else{r=B.cd
-p=B.cd}m=i
+if(p==null)p=B.cc}else{r=B.cc
+p=B.cc}m=i
 continue}if(k){h=i.b
 h=h==null?b:h.gGE()
 k=h===!0}else k=!1
@@ -60959,37 +60959,6 @@ B.f_=new A.b_(7,"QU")
 B.ae=new A.b_(8,"AL")
 B.dj=new A.b_(9,"PR")
 B.yO=new A.rm(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.A6=A.a(s(["Yes","No","wtf"]),t.s)
-B.DL=new A.da("Does the following code compile?","lambda.png",B.A6,0,350,100,"Scopes, lambdas, scopes inside lambdas, and lambdas inside scopes.")
-B.zy=A.a(s(["0","1","2","Syntax Error"]),t.s)
-B.DQ=new A.da("What is the output of following code?","boolinc.png",B.zy,3,500,100,"Bool increments got deprecated in C++17.")
-B.zR=A.a(s(['"Pie"',"Run Time Error","Compile Time Error","Syntax Error"]),t.s)
-B.DS=new A.da("What is the output of following code?","chararr.png",B.zR,2,500,100,'The string "Pie" has an implicit null character in the end of it, so it\'s 4 characters long, but the array is only 3 characters long.')
-B.Ao=A.a(s(["0","1","Compile Time Error","Syntax Error"]),t.s)
-B.DM=new A.da("What is the output of following code?","3darr.png",B.Ao,2,500,120,"The correct type is unsigned char (*arr2)[5] = arr[2];")
-B.Aq=A.a(s(["3","4","Segmentaion Fault","Syntax Error"]),t.s)
-B.DK=new A.da("What is the output of following code?","numindex.png",B.Aq,1,500,120,"The bracket operator translates to a simple pointer addition. Addition is commutative, so *(arr + 3) is the same as *(3 + arr).")
-B.A3=A.a(s(["342","222","314","334"]),t.s)
-B.DN=new A.da("What is the output of following code?","overdose.png",B.A3,1,500,90,"const cast causes an rvalue cast by default unless specified otherwise.")
-B.zs=A.a(s(["-2","-6","-26","6"]),t.s)
-B.DP=new A.da("What is the output of following code?","folding.png",B.zs,3,500,120,"The expression unfolds to -3 - (-14 - (-1 - (-5 - (-9))))")
-B.yR=A.a(s(["-2","-1","-0","Syntax Error"]),t.s)
-B.DO=new A.da("What is the output of following code?","bit.png",B.yR,0,350,120,"b was alocated 2 bits only and was initialized to 0b01. Adding 1 to it causes it to overflow to 0b10, which is -2 in 2's complement.")
-B.zi=A.a(s(["3.14Meow","3:3.414","3.414:3","Syntax Error"]),t.s)
-B.DT=new A.da("What is the output of following code?","init.png",B.zi,3,350,120,"You MUST initialize the variables in the order they are declared in the struct.")
-B.zQ=A.a(s(["Yup","Nope","No idea"]),t.s)
-B.DH=new A.da("Does the following code compile?","cap.png",B.zQ,1,600,120,"The '<int>' syntax is not allowed for calling lambdas.")
-B.zS=A.a(s(["31433","3333","14333","Syntax Error"]),t.s)
-B.DR=new A.da("What is the output of following code?","const.png",B.zS,2,500,90,"const/constexpr cause the compiler to evaluate the expression at compile time.")
-B.zJ=A.a(s(["0","1","Syntax Error","Compile Time Error"]),t.s)
-B.DI=new A.da("What is the output of following code?","strcomp.png",B.zJ,3,600,120,"There is not a function such as std::string::compare(std::string, std::string).")
-B.AB=A.a(s(["AAA","AAB","ABB","Compile Time Error"]),t.s)
-B.DJ=new A.da("What is the output of following code?","inherit.png",B.AB,2,400,100,"a is initialized to A, but a2 and b are initialized to B. Also, print is a virtual function.")
-B.yX=A.a(s([":3:3.14",":3.14:3.14","Syntax Error","Compile Time Error"]),t.s)
-B.DV=new A.da("What is the output of following code?","linh.png",B.yX,0,700,120,"Yes, you can indeed inherit from lambdas.")
-B.Al=A.a(s(["!??","!!!","?!?","!!?"]),t.s)
-B.DU=new A.da("What is the output of following code?","exclaim.png",B.Al,3,450,100,"z1 and z2 inherit from T1 because of the deduction guide. z3 inherits from itself which then initializes to t to Z which inherits from T2 by defualt.")
-B.cc=A.a(s([B.DL,B.DQ,B.DS,B.DM,B.DK,B.DN,B.DP,B.DO,B.DT,B.DH,B.DR,B.DI,B.DJ,B.DV,B.DU]),A.a4("w<da>"))
 B.yQ=A.a(s([0,1]),t.v)
 B.eL=new A.ev(0)
 B.yc=new A.ev(1)
@@ -61065,7 +61034,7 @@ B.lO=A.a(s([]),A.a4("w<arb>"))
 B.Ab=A.a(s([]),t.uw)
 B.Mf=A.a(s([]),t.as)
 B.Ah=A.a(s([]),t.yx)
-B.cd=A.a(s([]),t.f)
+B.cc=A.a(s([]),t.f)
 B.lN=A.a(s([]),t.tD)
 B.Aj=A.a(s([]),A.a4("w<a8M<@>>"))
 B.Ak=A.a(s([]),t.E1)
@@ -61111,6 +61080,37 @@ B.ue=new A.hv(5,"end")
 B.Aw=A.a(s([B.cO,B.ud,B.bK,B.jJ,B.bL,B.ue]),A.a4("w<hv>"))
 B.f2=A.a(s([!0,!1]),t.sj)
 B.AK=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
+B.A6=A.a(s(["Yes","No","wtf"]),t.s)
+B.DL=new A.da("Does the following code compile?","lambda.png",B.A6,0,350,100,"Scopes, lambdas, scopes inside lambdas, and lambdas inside scopes.")
+B.zy=A.a(s(["0","1","2","Syntax Error"]),t.s)
+B.DQ=new A.da("What is the output of following code?","boolinc.png",B.zy,3,500,100,"Bool increments got deprecated in C++17.")
+B.zR=A.a(s(['"Pie"',"Run Time Error","Compile Time Error","Syntax Error"]),t.s)
+B.DS=new A.da("What is the output of following code?","chararr.png",B.zR,2,500,100,'The string "Pie" has an implicit null character in the end of it, so it\'s 4 characters long, but the array is only 3 characters long.')
+B.Ao=A.a(s(["0","1","Compile Time Error","Syntax Error"]),t.s)
+B.DM=new A.da("What is the output of following code?","3darr.png",B.Ao,2,500,120,"The correct type is unsigned char (*arr2)[5] = arr[2];")
+B.Aq=A.a(s(["3","4","Segmentaion Fault","Syntax Error"]),t.s)
+B.DK=new A.da("What is the output of following code?","numindex.png",B.Aq,1,500,120,"The bracket operator translates to a simple pointer addition. Addition is commutative, so *(arr + 3) is the same as *(3 + arr).")
+B.A3=A.a(s(["342","222","314","334"]),t.s)
+B.DN=new A.da("What is the output of following code?","overdose.png",B.A3,1,500,90,"const cast causes an rvalue cast by default unless specified otherwise.")
+B.zs=A.a(s(["-2","-6","-26","6"]),t.s)
+B.DP=new A.da("What is the output of following code?","folding.png",B.zs,3,500,120,"The expression unfolds to -3 - (-14 - (-1 - (-5 - (-9))))")
+B.yR=A.a(s(["-2","-1","-0","Syntax Error"]),t.s)
+B.DO=new A.da("What is the output of following code?","bit.png",B.yR,0,350,120,"b was alocated 2 bits only and was initialized to 0b01. Adding 1 to it causes it to overflow to 0b10, which is -2 in 2's complement.")
+B.zi=A.a(s(["3.14Meow","3:3.414","3.414:3","Syntax Error"]),t.s)
+B.DT=new A.da("What is the output of following code?","init.png",B.zi,3,350,120,"You MUST initialize the variables in the order they are declared in the struct.")
+B.zQ=A.a(s(["Yup","Nope","No idea"]),t.s)
+B.DI=new A.da("Does the following code compile?","cap.png",B.zQ,1,600,120,"The '<int>' syntax is not allowed for calling lambdas.")
+B.zS=A.a(s(["31433","3333","14333","Syntax Error"]),t.s)
+B.DR=new A.da("What is the output of following code?","const.png",B.zS,2,500,90,"const/constexpr cause the compiler to evaluate the expression at compile time.")
+B.zJ=A.a(s(["0","1","Syntax Error","Compile Time Error"]),t.s)
+B.DJ=new A.da("What is the output of following code?","strcomp.png",B.zJ,3,600,120,"There is not a function such as std::string::compare(std::string, std::string).")
+B.AB=A.a(s(["AAA","AAB","ABB","Compile Time Error"]),t.s)
+B.DH=new A.da("What is the output of following code?","inherit.png",B.AB,1,600,120,"a and a2 are of type A. a2 it of type B.")
+B.yX=A.a(s([":3:3.14",":3.14:3.14","Syntax Error","Compile Time Error"]),t.s)
+B.DV=new A.da("What is the output of following code?","linh.png",B.yX,0,700,120,"Yes, you can indeed inherit from lambdas.")
+B.Al=A.a(s(["!??","!!!","?!?","!!?"]),t.s)
+B.DU=new A.da("What is the output of following code?","exclaim.png",B.Al,3,450,100,"z1 and z2 inherit from T1 because of the deduction guide. z3 inherits from itself which then initializes to t to Z which inherits from T2 by defualt.")
+B.cd=A.a(s([B.DL,B.DQ,B.DS,B.DM,B.DK,B.DN,B.DP,B.DO,B.DT,B.DI,B.DR,B.DJ,B.DH,B.DV,B.DU]),A.a4("w<da>"))
 B.af=new A.e(4294967304)
 B.cf=new A.e(4294967323)
 B.a6=new A.e(4294967423)
@@ -61412,7 +61412,7 @@ B.Cx=new A.bn([16,B.r_,17,B.r0,18,B.ct,19,B.r1,20,B.r2,21,B.r3,22,B.r4,23,B.fu,2
 B.A4=A.a(s(["in","iw","ji","jw","mo","aam","adp","aue","ayx","bgm","bjd","ccq","cjr","cka","cmk","coy","cqu","drh","drw","gav","gfx","ggn","gti","guv","hrr","ibi","ilw","jeg","kgc","kgh","koj","krm","ktr","kvs","kwq","kxe","kzj","kzt","lii","lmm","meg","mst","mwj","myt","nad","ncp","nnx","nts","oun","pcr","pmc","pmu","ppa","ppr","pry","puz","sca","skk","tdu","thc","thx","tie","tkk","tlw","tmp","tne","tnf","tsf","uok","xba","xia","xkh","xsj","ybd","yma","ymt","yos","yuu"]),t.s)
 B.at=new A.aW(78,{in:"id",iw:"he",ji:"yi",jw:"jv",mo:"ro",aam:"aas",adp:"dz",aue:"ktz",ayx:"nun",bgm:"bcg",bjd:"drl",ccq:"rki",cjr:"mom",cka:"cmr",cmk:"xch",coy:"pij",cqu:"quh",drh:"khk",drw:"prs",gav:"dev",gfx:"vaj",ggn:"gvr",gti:"nyc",guv:"duz",hrr:"jal",ibi:"opa",ilw:"gal",jeg:"oyb",kgc:"tdf",kgh:"kml",koj:"kwv",krm:"bmf",ktr:"dtp",kvs:"gdj",kwq:"yam",kxe:"tvd",kzj:"dtp",kzt:"dtp",lii:"raq",lmm:"rmx",meg:"cir",mst:"mry",mwj:"vaj",myt:"mry",nad:"xny",ncp:"kdz",nnx:"ngv",nts:"pij",oun:"vaj",pcr:"adx",pmc:"huw",pmu:"phr",ppa:"bfy",ppr:"lcq",pry:"prt",puz:"pub",sca:"hle",skk:"oyb",tdu:"dtp",thc:"tpo",thx:"oyb",tie:"ras",tkk:"twm",tlw:"weo",tmp:"tyj",tne:"kak",tnf:"prs",tsf:"taj",uok:"ema",xba:"cax",xia:"acn",xkh:"waw",xsj:"suj",ybd:"rki",yma:"lrr",ymt:"mtm",yos:"zom",yuu:"yug"},B.A4,t.hD)
 B.Mh=new A.bn([9,B.dG,10,B.fW,11,B.fX,12,B.fY,13,B.fZ,14,B.h_,15,B.h0,16,B.h1,17,B.h2,18,B.h3,19,B.h4,20,B.h9,21,B.ha,22,B.h6,23,B.h7,24,B.fM,25,B.fS,26,B.fA,27,B.fN,28,B.fP,29,B.fU,30,B.fQ,31,B.fE,32,B.fK,33,B.fL,34,B.hb,35,B.hc,36,B.h5,37,B.ba,38,B.fw,39,B.fO,40,B.fz,41,B.fB,42,B.fC,43,B.fD,44,B.fF,45,B.fG,46,B.fH,47,B.he,48,B.hf,49,B.hg,50,B.bb,51,B.hd,52,B.fV,53,B.fT,54,B.fy,55,B.fR,56,B.fx,57,B.fJ,58,B.fI,59,B.hh,60,B.hi,61,B.hj,62,B.bz,63,B.hJ,64,B.bc,65,B.h8,66,B.aW,67,B.hk,68,B.hl,69,B.hm,70,B.hn,71,B.ho,72,B.hp,73,B.hq,74,B.hr,75,B.hs,76,B.ht,77,B.cv,78,B.cu,79,B.hT,80,B.hU,81,B.hV,82,B.hK,83,B.hQ,84,B.hR,85,B.hS,86,B.hL,87,B.hN,88,B.hO,89,B.hP,90,B.hW,91,B.hX,93,B.iB,94,B.hY,95,B.hu,96,B.hv,97,B.is,98,B.iz,99,B.iA,100,B.iv,101,B.it,102,B.iw,104,B.hM,105,B.by,106,B.hI,107,B.hw,108,B.aX,110,B.hz,111,B.hH,112,B.hA,113,B.hF,114,B.hE,115,B.hC,116,B.hG,117,B.hD,118,B.hy,119,B.hB,121,B.io,122,B.iq,123,B.ip,124,B.i_,125,B.i0,126,B.rI,127,B.hx,128,B.jc,129,B.ir,130,B.ix,131,B.iy,132,B.iu,133,B.bd,134,B.bA,135,B.hZ,136,B.j4,137,B.ih,139,B.ii,140,B.ig,141,B.ik,142,B.id,143,B.il,144,B.im,145,B.ij,146,B.ie,148,B.iV,150,B.iE,151,B.iF,152,B.iW,158,B.t4,160,B.t6,163,B.iU,164,B.j6,166,B.j2,167,B.j3,169,B.iR,171,B.iO,172,B.iS,173,B.iP,174,B.iQ,175,B.iL,176,B.iN,177,B.rU,179,B.iT,180,B.j1,181,B.j5,182,B.rW,187,B.iC,188,B.iD,189,B.tb,190,B.th,191,B.i1,192,B.i2,193,B.i3,194,B.i4,195,B.i5,196,B.i6,197,B.i7,198,B.i8,199,B.i9,200,B.ia,201,B.ib,202,B.ic,209,B.iK,214,B.tc,215,B.iJ,216,B.iM,217,B.t_,218,B.te,225,B.j0,232,B.iI,233,B.iH,235,B.iG,237,B.rS,238,B.rR,239,B.ja,240,B.j8,241,B.j9,242,B.td,243,B.t7,252,B.rQ,256,B.fv,366,B.rL,370,B.rV,378,B.rM,380,B.j7,382,B.t9,400,B.ta,405,B.t3,413,B.rT,418,B.rX,419,B.rY,426,B.tf,427,B.tg,429,B.t0,431,B.t1,437,B.t2,439,B.rN,440,B.t8,441,B.t5,587,B.iX,588,B.iY,589,B.iZ,590,B.rZ,591,B.j_,592,B.jb,600,B.rO,601,B.rP,641,B.fu],t.iT)
-B.qM=new A.aW(0,{},B.cd,A.a4("aW<H,oL>"))
+B.qM=new A.aW(0,{},B.cc,A.a4("aW<H,oL>"))
 B.Ac=A.a(s([]),t.g)
 B.CI=new A.aW(0,{},B.Ac,A.a4("aW<cI,cI>"))
 B.Ad=A.a(s([]),A.a4("w<lA>"))
